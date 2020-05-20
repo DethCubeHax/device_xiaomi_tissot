@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_tissot.mk
+    $(LOCAL_DIR)/cos_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_tissot-user \
-    aicp_tissot-userdebug \
-    aicp_tissot-eng \
+    cos_tissot-user \
+    cos_tissot-userdebug \
+    cos_tissot-eng \
