@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+#DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Inherit from msm8953-common
 $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
@@ -92,9 +92,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -113,3 +110,8 @@ $(call inherit-product, build/target/product/verity.mk)
 PRODUCT_PACKAGES += \
     Via
 
+
+# fix for cosmic undefined errors >>> remove if unnecessary <<<
+PRODUCT_PACKAGES += \
+    libqdMetaData.system \
+    display_intf_headers
