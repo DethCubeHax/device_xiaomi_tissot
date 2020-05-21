@@ -113,3 +113,7 @@ $(call inherit-product, build/target/product/verity.mk)
 PRODUCT_PACKAGES += \
     Via
 
+# fix for cosmic undefined errors >>> remove if unnecessary <<<
+PRODUCT_PACKAGES += \
+    libqdMetaData.system \
+    display_intf_headers
