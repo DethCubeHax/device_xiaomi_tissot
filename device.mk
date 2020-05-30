@@ -96,6 +96,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_8953
 
+# AICP stuff
+PRODUCT_PACKAGES += \
+    Snap \
+    JamesDSPManager
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
