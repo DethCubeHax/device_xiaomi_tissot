@@ -98,8 +98,7 @@ PRODUCT_PACKAGES += \
 
 # AICP stuff
 PRODUCT_PACKAGES += \
-    Snap \
-    JamesDSPManager
+    Snap
 
 # Update engine
 PRODUCT_PACKAGES += \
