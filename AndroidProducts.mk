@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_tissot.mk
+    $(LOCAL_DIR)/potato_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_tissot-user \
-    derp_tissot-userdebug \
-    derp_tissot-eng \
+    potato_tissot-user \
+    potato_tissot-userdebug \
+    potato_tissot-eng \
